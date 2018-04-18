@@ -1,6 +1,11 @@
 # EnPy
 EnPy is made simple to encrypt your file
 
+### Install Requirements
+```
+pip install -r requirements.txt
+```
+
 ## Usage
 ```
 python encrypt.py [-f FILE] [-e ENCRYPT] [--chunksize] [--list]
