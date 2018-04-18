@@ -10,6 +10,8 @@ pip install -r requirements.txt
 ```
 python encrypt.py [-f FILE] [-e ENCRYPT] [--chunksize] [--list]
 
+
+
 optional arguments:
   -h, --help            show this help message and exit
   -f FILE, --file FILE  Path to file
