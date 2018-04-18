@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# Encrypt your password here!
+# Encrypt your file here!
 # Author: BlackXploits
 
 import hashlib
@@ -14,7 +14,7 @@ b  = '\033[34m'
 os.system('clear')
 
 class Encrypt():
-	def __init__(self, filepath, encrypt='sha256', chunksize=64):
+	def __init__(self, filepath, encrypt='MD5', chunksize=64):
 		if not encrypt in hashlib.algorithms:
 			raise ValueError(r+'type encrypt not supported')
 		self.encrypt = encrypt
@@ -50,9 +50,9 @@ if __name__ == '__main__':
 		                               Y8b d88P 
 		                                "Y88P"
 	"""+w)
-	parser = argparse.ArgumentParser(description='File encrypt')
+	parser = argparse.ArgumentParser(description='File Encrypt')
 	parser.add_argument('-f', '--file', help='Path to file', action='store', dest='file', default=False)
-	parser.add_argument('-e', help='Type to encrypt your password (must be supported by your hashlib version)', action='store', dest='encrypt', default='sha256')
+	parser.add_argument('-e', help='Type to encrypt your file (must be supported by your hashlib version)', action='store', dest='encrypt', default='MD5')
 	parser.add_argument('--chunksize', help='Chunk size', action='store', dest='cs', default='64')
 	parser.add_argument('--list', help='List supported hash types', action='store_true', dest='list', default=False)
 	args = parser.parse_args()
