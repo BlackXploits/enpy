@@ -78,7 +78,7 @@ if __name__ == '__main__':
 		print ('[*] Encrypting Files... '),;sys.stdout.flush()
 		Encrypt = Encrypt(args.file, encrypt=args.encrypt.lower())
 		hash = Encrypt.hashFile()
-		print (g+'[DONE]')
+		print (g+'[DONE]'+w)
 		print ('[*]'+w+' %s'+w+' Hash: '+g+'%s') %(args.encrypt.upper(), hash)
 	except ValueError, e:
 		if 'file does not exist' in e:
